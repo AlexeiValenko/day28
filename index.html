@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>File System</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body oncontextmenu="return (false)">
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="history.js"></script>
+    <script src="file.js"></script>
+    <script src="folder.js"></script>
+    <script src="fileSystem.js"></script>
+    <script src="UI.js"></script>
+    <script src="main.js"></script>
+
+    <ul type="context" class="contextMenu">
+        <li class="menuitem foldermenu contentmenu" id="newFolder">New Folder</li>
+        <li class="menuitem foldermenu contentmenu" id="newFile">New File</li>
+        <li class="menuitem filemenu foldermenu" id="rename">Rename</li>
+        <li class="menuitem filemenu foldermenu" id="delete">Delete</li>
+    </ul>
+
+<div class="layout">
+    <div class="header">
+        <button id="back" class="history">Back</button>
+        <button id="forward" class="history">Forward</button>
+        <input type="text" id="path" class="path">
+        <button id="go" class="path">Go</button>
+    </div>
+
+    <div class="sub-layout">
+        <div class="side-bar">
+            <ul class="list"></ul>
+        </div>
+        <div class="content"></div>
+    </div>
+</div>
+
+</body>
+</html>
